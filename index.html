@@ -6,43 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="calculator-container">
         <div id="calculator-screen-container">
-            <div id="calculator-screen-history"></div>
-            <div id="calculator-screen-main"></div>
+            <div id="calculator-screen-history">31251</div>
+            <div id="calculator-screen-main">3831</div>
         </div>
         <div id="calculator-buttons-container">
             <div id="calculator-buttons-row">
-                <button class="calculator-button">AC</button>
-                <button class="calculator-button">C</button>
-                <button class="calculator-button">%</button>
-                <button class="calculator-button">&divide;</button>
+                <button class="calculator-button operation-button">AC</button>
+                <button class="calculator-button operation-button">C</button>
+                <button class="calculator-button operation-button">%</button>
+                <button class="calculator-button operation-button">&divide;</button>
             </div>
             <div id="calculator-buttons-row">
                 <button class="calculator-button">7</button>
                 <button class="calculator-button">8</button>
                 <button class="calculator-button">9</button>
-                <button class="calculator-button">&times;</button>
+                <button class="calculator-button operation-button">&times;</button>
             </div>
             <div id="calculator-buttons-row">
                 <button class="calculator-button">4</button>
                 <button class="calculator-button">5</button>
                 <button class="calculator-button">6</button>
-                <button class="calculator-button">&minus;</button>
+                <button class="calculator-button operation-button">&minus;</button>
             </div>
             <div id="calculator-buttons-row">
                 <button class="calculator-button">1</button>
                 <button class="calculator-button">2</button>
                 <button class="calculator-button">3</button>
-                <button class="calculator-button">+</button>
+                <button class="calculator-button operation-button">+</button>
             </div>
             <div id="calculator-buttons-row">
                 <button class="calculator-button">0</button>
                 <button class="calculator-button">0</button>
                 <button class="calculator-button">.</button>
-                <button class="calculator-button">&equals;</button>
+                <div id="round-button-container">
+                <button id="round-button" class="calculator-button operation-button">&equals;</button>
+                </div>
             </div>
         </div>
     </div>
