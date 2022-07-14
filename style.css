@@ -55,6 +55,7 @@ body {
     font-size: 2em;
     font-weight: 500;
     color: white;
+    cursor: pointer;
 }
 
 .operation-button {
