@@ -8,8 +8,6 @@ let result = 0;
 let currentOperator;
 let timesClicked = 0;
 
-
-
 function inputButton(number) {
     mainScreen.textContent+= number.textContent;
 };
@@ -101,7 +99,6 @@ function divide(a, b) {
 function modulo(a, b) {
     return a%b;
 }
-
 
 numberButtons.forEach(number => {
     number.addEventListener("click", () => inputButton(number));
