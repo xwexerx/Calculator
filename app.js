@@ -44,7 +44,11 @@ function operate(button) {
 
 function equate() {
     b = Number(mainScreen.textContent);
-    secondaryScreen.textContent = `${a} ${currentOperator} ${b}`;
+    if(a === 0 && b === 0) {
+        secondaryScreen.textContent = "";
+    } else {
+        secondaryScreen.textContent = `${a} ${currentOperator} ${b}`;
+    }
     switch (currentOperator) {
         case "%":
             result = modulo(a, b);
@@ -84,7 +88,11 @@ function multiply(a, b) {
 }
 
 function divide(a, b) {
-    return a/b;
+    if(b === 0) {
+        return "Nice try!"
+    } else {
+        return a/b;
+    }
 }
 
 function modulo(a, b) {
