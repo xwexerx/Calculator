@@ -20,6 +20,8 @@ body {
     background-color: black;
     width: 400px;
     height: 600px;
+    border: 1px solid transparent;
+    border-radius: 1em;
 }
 
 #calculator-screen-container {
