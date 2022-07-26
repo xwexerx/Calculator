@@ -10,7 +10,6 @@ let timesClicked = 0;
 
 
 
-
 function inputButton(number) {
     mainScreen.textContent+= number.textContent;
 };
@@ -72,6 +71,10 @@ function equate() {
             break;
         default:
             break;
+    }
+    if(mainScreen.textContent.length > 15) {
+        mainScreen.style.fontSize = "1.75em";
+        secondaryScreen.style.fontSize = "1.5em";
     }
 }
 
