@@ -32,14 +32,19 @@ body {
     height: 25%;
     width: 90%;
     margin-top: 25px;
+    background-color: #303030;
+    border: 1px solid transparent;
+    border-radius: 1em;
 }
 
 #calculator-screen-history {
     font-size: 2em;
+    padding: 15px;
 }
 
 #calculator-screen-main {
     font-size: 2.5em;
+    padding: 15px;
 }
 
 #calculator-buttons-container {

@@ -15,6 +15,8 @@ function inputButton(number) {
 function allClear() {
     mainScreen.textContent = "";
     secondaryScreen.textContent = "";
+    mainScreen.style.fontSize = "2.5em";
+    secondaryScreen.style.fontSize = "2em";
     a = 0;
     b = 0;
     result = 0;
