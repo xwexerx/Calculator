@@ -9,7 +9,7 @@ let currentOperator;
 let timesClicked = 0;
 
 function inputButton(number) {
-    mainScreen.textContent+= number.textContent;
+    mainScreen.textContent += number.textContent;
 };
 
 function allClear() {
@@ -104,6 +104,61 @@ function modulo(a, b) {
 
 numberButtons.forEach(number => {
     number.addEventListener("click", () => inputButton(number));
+});
+
+document.addEventListener('keydown', function(event) {
+    if(event.keyCode == 56 & event.shiftKey == true) {
+        operate(document.getElementById("times-button"));
+    }
+    else if(event.keyCode == 189) {
+        operate(document.getElementById("minus-button"));
+    }
+    else if(event.keyCode == 187 & event.shiftKey == true) {
+        operate(document.getElementById("add-button"));
+    }
+    else if(event.keyCode == 187) {
+        equate(document.getElementById("equals-button"));
+    }
+    else if(event.keyCode == 53 & event.shiftKey == true) {
+        operate(document.getElementById("modulo-button"));
+    }
+    else if(event.keyCode == 186 & event.shiftKey == true) {
+        operate(document.getElementById("divide-button"));
+    }
+    else if(event.keyCode == 8) {
+        let usuniete = mainScreen.textContent.slice(0, -1);
+        mainScreen.textContent = usuniete;
+    }
+    else if(event.keyCode == 49) {
+        mainScreen.textContent += 1;
+    }
+    else if(event.keyCode == 50) {
+        mainScreen.textContent += 2;
+    }
+    else if(event.keyCode == 51) {
+        mainScreen.textContent += 3;
+    }
+    else if(event.keyCode == 52) {
+        mainScreen.textContent += 4;
+    }
+    else if(event.keyCode == 53) {
+        mainScreen.textContent += 5;
+    }
+    else if(event.keyCode == 54) {
+        mainScreen.textContent += 6;
+    }
+    else if(event.keyCode == 55) {
+        mainScreen.textContent += 7;
+    }
+    else if(event.keyCode == 56) {
+        mainScreen.textContent += 8;
+    }
+    else if(event.keyCode == 57) {
+        mainScreen.textContent += 9;
+    }
+    else if(event.keyCode == 48) {
+        mainScreen.textContent += 0;
+    }
 });
 
 operationButtons.forEach(button => {
